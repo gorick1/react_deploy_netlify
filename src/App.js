@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       
-              <Header title="React-JS Blog" />
+              <Header title="React app by Rhythm" />
              <DataProvider>
               <Nav />
               <Routes>
