@@ -35,9 +35,7 @@ export const DataProvider = ({ children }) => {
 
     
 
-    useEffect(() => {
-        setPosts(data);
-    }, [data])
+  
 
     useEffect(() => {
         const filteredResults = posts.filter((post) =>
