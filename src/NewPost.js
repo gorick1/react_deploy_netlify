@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { format } from 'date-fns';
-import api from './api/posts';
+
 import DataContext from './context/DataContext';
 
 const NewPost = () => {
@@ -16,8 +16,8 @@ const NewPost = () => {
         const datetime = format(new Date(), 'MMMM dd, yyyy pp');
         const newPost = { id, title: postTitle, datetime, body: postBody };
         try {
-            const response = await api.post('/posts', newPost);
-            const allPosts = [...posts, response.data];
+            
+            const allPosts = [...posts, newPost];
             setPosts(allPosts);
             setPostTitle('');
             setPostBody('');
