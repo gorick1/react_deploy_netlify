@@ -7,7 +7,7 @@ import Postpage from './Postpage';
 import EditPost from './EditPost';
 import About from './About';
 import Missing from './Missing';
-import { Routes,Route, Switch } from 'react-router-dom';
+import { Routes,Route} from 'react-router-dom';
 import { DataProvider } from './context/DataContext';
 
 function App() {
